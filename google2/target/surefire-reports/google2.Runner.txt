@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: google2.Runner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 2, Time elapsed: 31.551 s <<< FAILURE! - in google2.Runner
+Funcionalidade: Buscar por termo  Time elapsed: 0.03 s  <<< ERROR!
+java.lang.NullPointerException
+

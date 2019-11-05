@@ -1,0 +1,180 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6709614700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Consultar.Iniciar()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5394149000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultarPO.Iniciar()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Busca Termo Unico com Sucesso",
+        "description": "",
+        "id": "buscar-termo;busca-termo-unico-com-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 671874600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Consultar.Finalizar()"
+            }
+          },
+          {
+            "result": {
+              "duration": 800848400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultarPO.Finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1504578100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "que acesso o site do Google 1",
+            "match": {
+              "location": "ConsultarPO.que_acesso_o_site_do_Google()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2058789700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "digito o termo \"geladeira\" e pressiono Enter 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "geladeira",
+                  "offset": 16
+                }
+              ],
+              "location": "ConsultarPO.digito_o_termo_e_pressiono_Enter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "comments": [
+              {
+                "line": 6,
+                "value": "#And pressiono o Enter"
+              }
+            ],
+            "line": 7,
+            "name": "vejo os resultados e a guia 1 \"geladeira - Pesquisa Google\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Buscar Termo",
+    "description": "",
+    "id": "buscar-termo",
+    "keyword": "Feature",
+    "uri": "ConsultarPO.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5531677100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Consultar.Iniciar()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5365056300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultarPO.Iniciar()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Busca com sucesso por uma unica palavra",
+        "description": "",
+        "id": "buscar-por-termo;busca-com-sucesso-por-uma-unica-palavra",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1748135900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que acesso o site do Google",
+            "match": {
+              "location": "Consultar.que_acesso_o_site_do_Google()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "line": 7,
+            "name": "digito o termo \"feriado\"",
+            "keyword": "Quando "
+          },
+          {
+            "line": 8,
+            "name": "clico no Enter",
+            "keyword": "E "
+          },
+          {
+            "line": 9,
+            "name": "exibe a lista de resultados com o titulo \"feriado - Pesquisa Google\"",
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Buscar por termo",
+    "description": "Se aplica a qualquer usu�rio",
+    "id": "buscar-por-termo",
+    "keyword": "Funcionalidade",
+    "uri": "ConsultarPt.feature"
+  }
+]
